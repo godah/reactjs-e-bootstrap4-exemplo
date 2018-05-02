@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import ReleaseForm from '../ui/ReleaseForm';
+import axios from 'axios';
 
 export default class PrimeiraPagina extends Component {
     constructor() {
         super();
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
+            contacts: [],
             releases: [
                 {
                     id: 1,
@@ -31,6 +33,7 @@ export default class PrimeiraPagina extends Component {
             ]
         }
     }
+
 
     handleSubmit(e, { name, date }) {
         e.preventDefault();

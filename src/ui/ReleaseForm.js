@@ -21,11 +21,11 @@ const ReleaseForm = ({ submitHandler }) => {
     return (
         <form onSubmit={handleSubmit} className="form-inline">
             <label className="sr-only" for="inlineFormInputName2">Release Name</label>
-            <input type="text" ref={input => _releaseName = input} className="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Set the Name" />
+            <input type="text" ref={input => _releaseName = input} className="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Set the Name" required='true'/>
 
             <label className="sr-only" for="inlineFormInputGroupUsername2">Release Date</label>
             <div className="input-group mb-2 mr-sm-2">
-                <input type="text" ref={input => _releaseDate = input} className="form-control" id="inlineFormInputGroupUsername2" placeholder="Set the Date" />
+                <input type="text" ref={input => _releaseDate = input} className="form-control" id="inlineFormInputGroupUsername2" placeholder="Set the Date" required='true'/>
             </div>
 
 
